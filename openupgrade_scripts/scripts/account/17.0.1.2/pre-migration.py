@@ -74,9 +74,9 @@ def _convert_account_tax_description(env):
     # Deliberately call migrate_translations_to_jsonb instead of
     # convert_column_translatable to support the case you have translate=True on
     # the field in v16 (l10n_multilang compatibility).
-    openupgrade_160.migrate_translations_to_jsonb(
-        env, [("account_tax", "invoice_label")]
-    )
+    #openupgrade_160.migrate_translations_to_jsonb(
+    #    env, [("account_tax", "invoice_label")]
+    #)
 
 
 def _am_create_delivery_date_column(env):
